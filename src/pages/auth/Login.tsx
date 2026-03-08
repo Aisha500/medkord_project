@@ -43,7 +43,7 @@ const Login = () => {
               onClick={() => setAccountType('patient')}
               className={`flex-1 rounded-md px-4 py-2 text-sm font-medium transition-all ${accountType === 'patient' ? 'bg-background text-foreground shadow-sm' : 'text-muted-foreground'}`}
             >
-              Patient
+              Individual
             </button>
             <button
               onClick={() => setAccountType('provider')}
