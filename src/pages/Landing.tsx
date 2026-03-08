@@ -56,7 +56,7 @@ const Landing = () => {
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button variant="hero" size="lg" className="text-base px-8 py-6" asChild>
-                <Link to="/signup/patient">I'm a Patient</Link>
+                <Link to="/signup/patient">Register as Individual</Link>
               </Button>
               <Button variant="hero-outline" size="lg" className="text-base px-8 py-6" asChild>
                 <Link to="/signup/facility">Register My Facility</Link>

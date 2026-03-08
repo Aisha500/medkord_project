@@ -17,8 +17,8 @@ const PatientSignup = () => {
         </Link>
 
         <div className="rounded-xl border bg-card p-8 shadow-card">
-          <h1 className="mb-2 text-xl font-bold text-foreground">Create Patient Account</h1>
-          <p className="mb-6 text-sm text-muted-foreground">Access your medical records digitally</p>
+          <h1 className="mb-2 text-xl font-bold text-foreground">Register as Individual</h1>
+          <p className="mb-6 text-sm text-muted-foreground">Create your personal account to access your medical records digitally</p>
 
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-2 gap-4">
