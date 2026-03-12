@@ -31,6 +31,10 @@ const FacilitySignup = () => {
       toast({ title: 'Please fill in all required fields', variant: 'destructive' });
       return;
     }
+    if (adminPassword !== adminConfirmPassword) {
+      toast({ title: 'Passwords do not match', variant: 'destructive' });
+      return;
+    }
     setLoading(true);
     const { error } = await signUp(adminEmail, adminPassword, {
       full_name: adminName,
