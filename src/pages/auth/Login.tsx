@@ -52,9 +52,9 @@ const Login = () => {
         <div className="w-full max-w-md">
           <Link to="/" className="mb-8 flex items-center gap-2 lg:hidden">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-primary">
-              <MedCordLogo size={20} className="text-primary-foreground" />
+              <MediCordLogo size={20} className="text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">MedCord</span>
+            <span className="text-xl font-bold text-foreground">MediCord</span>
           </Link>
 
           <h1 className="mb-2 text-2xl font-bold text-foreground">Sign in to your account</h1>

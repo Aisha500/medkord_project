@@ -57,7 +57,7 @@ const FacilitySignup = () => {
 
         <div className="rounded-xl border bg-card p-8 shadow-card">
           <h1 className="mb-2 text-xl font-bold text-foreground">Register Your Health Facility</h1>
-          <p className="mb-6 text-sm text-muted-foreground">Set up your clinic, hospital, or health centre on MedCord</p>
+          <p className="mb-6 text-sm text-muted-foreground">Set up your clinic, hospital, or health centre on MediCord</p>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="space-y-2">
