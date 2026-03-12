@@ -1,6 +1,4 @@
-<center>
-  # MedKord
-</center>
+# MedKord
 
 **Your Medical Records, Always Accessible.**
 
