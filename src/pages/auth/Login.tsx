@@ -39,8 +39,8 @@ const Login = () => {
       {/* Left panel */}
       <div className="hidden w-1/2 gradient-hero lg:flex lg:flex-col lg:items-center lg:justify-center lg:p-12">
         <div className="max-w-md text-center">
-          <MediCordLogo size={64} className="mx-auto mb-6 text-primary-foreground" />
-          <h2 className="mb-4 text-3xl font-bold text-primary-foreground">Welcome back to MediCord</h2>
+          <MedKordLogo size={64} className="mx-auto mb-6 text-primary-foreground" />
+          <h2 className="mb-4 text-3xl font-bold text-primary-foreground">Welcome back to MedKord</h2>
           <p className="text-primary-foreground/80 leading-relaxed">
             Access your medical records securely. Your health history, always at your fingertips.
           </p>
