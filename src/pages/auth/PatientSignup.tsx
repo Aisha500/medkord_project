@@ -14,6 +14,7 @@ const PatientSignup = () => {
   const [email, setEmail] = useState('');
   const [dob, setDob] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const { signUp } = useAuth();
   const { toast } = useToast();
@@ -23,6 +24,10 @@ const PatientSignup = () => {
     e.preventDefault();
     if (!firstName || !lastName || !email || !password) {
       toast({ title: 'Please fill in all required fields', variant: 'destructive' });
+      return;
+    }
+    if (password !== confirmPassword) {
+      toast({ title: 'Passwords do not match', variant: 'destructive' });
       return;
     }
     setLoading(true);
@@ -85,6 +90,11 @@ const PatientSignup = () => {
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
               <Input id="password" type="password" placeholder="••••••••" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="confirmPassword">Confirm password</Label>
+              <Input id="confirmPassword" type="password" placeholder="••••••••" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
             </div>
 
             <Button variant="hero" className="w-full" size="lg" type="submit" disabled={loading}>

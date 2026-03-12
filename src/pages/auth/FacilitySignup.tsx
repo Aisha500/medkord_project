@@ -19,6 +19,7 @@ const FacilitySignup = () => {
   const [adminPhone, setAdminPhone] = useState('');
   const [adminEmail, setAdminEmail] = useState('');
   const [adminPassword, setAdminPassword] = useState('');
+  const [adminConfirmPassword, setAdminConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const { signUp } = useAuth();
   const { toast } = useToast();
@@ -28,6 +29,10 @@ const FacilitySignup = () => {
     e.preventDefault();
     if (!adminName || !adminEmail || !adminPassword || !facilityName || !registrationNumber) {
       toast({ title: 'Please fill in all required fields', variant: 'destructive' });
+      return;
+    }
+    if (adminPassword !== adminConfirmPassword) {
+      toast({ title: 'Passwords do not match', variant: 'destructive' });
       return;
     }
     setLoading(true);
@@ -119,6 +124,10 @@ const FacilitySignup = () => {
               <div className="mt-4 space-y-2">
                 <Label htmlFor="adminPassword">Password</Label>
                 <Input id="adminPassword" type="password" placeholder="••••••••" value={adminPassword} onChange={(e) => setAdminPassword(e.target.value)} />
+              </div>
+              <div className="mt-4 space-y-2">
+                <Label htmlFor="adminConfirmPassword">Confirm password</Label>
+                <Input id="adminConfirmPassword" type="password" placeholder="••••••••" value={adminConfirmPassword} onChange={(e) => setAdminConfirmPassword(e.target.value)} />
               </div>
             </div>
 
