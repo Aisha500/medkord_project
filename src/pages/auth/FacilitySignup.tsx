@@ -10,6 +10,7 @@ import { useToast } from '@/hooks/use-toast';
 
 const FacilitySignup = () => {
   const [facilityName, setFacilityName] = useState('');
+  const [registrationNumber, setRegistrationNumber] = useState('');
   const [facilityType, setFacilityType] = useState('');
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
