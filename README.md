@@ -4,7 +4,7 @@
   
 </center>
 
-**Your Medical Records, Always Accessible.**
+**Your Medical Records Always Accessible.**
 
 MedKord is a digital healthcare solution built specifically for the Nigerian healthcare system. It digitizes patient consultation history, enabling healthcare providers to record information faster while allowing patients to securely access their medical records from any device.
 
