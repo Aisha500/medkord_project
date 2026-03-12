@@ -23,8 +23,8 @@ export default defineConfig(({ mode }) => ({
         navigateFallbackDenylist: [/^\/~oauth/],
       },
       manifest: {
-        name: "MediCord — Digital Medical Records",
-        short_name: "MediCord",
+        name: "MedKord — Digital Medical Records",
+        short_name: "MedKord",
         description: "Access your medical records digitally. Built for Nigerian healthcare.",
         theme_color: "#0d7a61",
         background_color: "#f7faf9",
