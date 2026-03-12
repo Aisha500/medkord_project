@@ -27,18 +27,18 @@ const PatientDashboard = () => {
             <MedCordLogo size={24} className="text-primary-foreground" />
             <span className="font-bold text-primary-foreground">MedCord</span>
           </div>
-          <Link to="/" className="text-primary-foreground/80 hover:text-primary-foreground">
+          <button onClick={signOut} className="text-primary-foreground/80 hover:text-primary-foreground">
             <LogOut className="h-5 w-5" />
-          </Link>
+          </button>
         </div>
         <div className="flex items-center gap-3">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-foreground/20">
             <User className="h-6 w-6 text-primary-foreground" />
           </div>
           <div>
-            <h1 className="text-lg font-bold text-primary-foreground">{patient.full_name}</h1>
+            <h1 className="text-lg font-bold text-primary-foreground">{profile?.full_name ?? 'Welcome'}</h1>
             <p className="text-sm text-primary-foreground/80">
-              {patient.blood_group} · {patient.genotype} · Allergies: {patient.allergies}
+              {profile?.email}
             </p>
           </div>
         </div>
