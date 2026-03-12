@@ -70,7 +70,7 @@ const Landing = () => {
       {/* Features */}
       <section className="border-t bg-card py-20">
         <div className="container">
-          <h2 className="mb-4 text-center text-3xl font-bold text-foreground">How MedCord Works</h2>
+          <h2 className="mb-4 text-center text-3xl font-bold text-foreground">How MediCord Works</h2>
           <p className="mx-auto mb-16 max-w-xl text-center text-muted-foreground">
             A simple, secure system connecting patients and healthcare providers.
           </p>
