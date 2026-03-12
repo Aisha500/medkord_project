@@ -14,6 +14,7 @@ const PatientSignup = () => {
   const [email, setEmail] = useState('');
   const [dob, setDob] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const { signUp } = useAuth();
   const { toast } = useToast();
