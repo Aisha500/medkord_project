@@ -79,7 +79,7 @@ const ProviderDashboard = () => {
         <div className="flex h-14 items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
-              <Shield className="h-4 w-4 text-primary-foreground" />
+              <MedCordLogo size={16} className="text-primary-foreground" />
             </div>
             <span className="font-bold text-foreground text-sm">MedCord</span>
           </div>
