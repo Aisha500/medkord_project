@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Users, Search, Plus, UserPlus, Settings, FileText, Activity, LogOut } from 'lucide-react';
+import { Users, Search, Plus, UserPlus, Settings, FileText, Activity, LogOut } from 'lucide-react';
+import MedCordLogo from '@/components/MedCordLogo';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { mockConsultations, mockStaff } from '@/data/mockData';
