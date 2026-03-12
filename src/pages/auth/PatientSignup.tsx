@@ -92,6 +92,11 @@ const PatientSignup = () => {
               <Input id="password" type="password" placeholder="••••••••" value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
 
+            <div className="space-y-2">
+              <Label htmlFor="confirmPassword">Confirm password</Label>
+              <Input id="confirmPassword" type="password" placeholder="••••••••" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+            </div>
+
             <Button variant="hero" className="w-full" size="lg" type="submit" disabled={loading}>
               {loading ? 'Creating Account...' : 'Create Account'}
             </Button>

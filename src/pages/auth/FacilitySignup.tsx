@@ -125,6 +125,10 @@ const FacilitySignup = () => {
                 <Label htmlFor="adminPassword">Password</Label>
                 <Input id="adminPassword" type="password" placeholder="••••••••" value={adminPassword} onChange={(e) => setAdminPassword(e.target.value)} />
               </div>
+              <div className="mt-4 space-y-2">
+                <Label htmlFor="adminConfirmPassword">Confirm password</Label>
+                <Input id="adminConfirmPassword" type="password" placeholder="••••••••" value={adminConfirmPassword} onChange={(e) => setAdminConfirmPassword(e.target.value)} />
+              </div>
             </div>
 
             <Button variant="hero" className="w-full" size="lg" type="submit" disabled={loading}>
