@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import { User, Clock, FileText, Pill, FlaskConical, LogOut, Share2 } from 'lucide-react';
 import MedCordLogo from '@/components/MedCordLogo';
 import { Button } from '@/components/ui/button';
-import { mockPatient, mockConsultations, mockPrescriptions, mockLabResults } from '@/data/mockData';
+import { useAuth } from '@/hooks/useAuth';
+import { mockConsultations, mockPrescriptions, mockLabResults } from '@/data/mockData';
 import { format } from 'date-fns';
 
 const roleLabel: Record<string, string> = {
@@ -15,7 +16,7 @@ const roleLabel: Record<string, string> = {
 };
 
 const PatientDashboard = () => {
-  const patient = mockPatient;
+  const { profile, signOut } = useAuth();
 
   return (
     <div className="min-h-screen bg-background pb-24">
