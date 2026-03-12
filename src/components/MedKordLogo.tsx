@@ -1,4 +1,4 @@
-interface MediCordLogoProps {
+interface MedKordLogoProps {
   size?: number;
   className?: string;
 }
