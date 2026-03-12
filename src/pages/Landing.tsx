@@ -53,7 +53,7 @@ const Landing = () => {
               <span className="text-primary">Always Accessible</span>
             </h1>
             <p className="mb-10 text-lg text-muted-foreground md:text-xl leading-relaxed max-w-2xl mx-auto">
-              MediCord digitizes patient consultation history so healthcare providers can record faster, and patients can access their medical records from any device.
+              MedKord digitizes patient consultation history so healthcare providers can record faster, and patients can access their medical records from any device.
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button variant="hero" size="lg" className="text-base px-8 py-6" asChild>
