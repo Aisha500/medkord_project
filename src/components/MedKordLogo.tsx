@@ -3,7 +3,7 @@ interface MedKordLogoProps {
   className?: string;
 }
 
-const MediCordLogo = ({ size = 20, className = '' }: MediCordLogoProps) => (
+const MedKordLogo = ({ size = 20, className = '' }: MedKordLogoProps) => (
   <svg
     width={size}
     height={size}
