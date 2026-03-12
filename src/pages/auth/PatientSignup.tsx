@@ -26,6 +26,10 @@ const PatientSignup = () => {
       toast({ title: 'Please fill in all required fields', variant: 'destructive' });
       return;
     }
+    if (password !== confirmPassword) {
+      toast({ title: 'Passwords do not match', variant: 'destructive' });
+      return;
+    }
     setLoading(true);
     const { error } = await signUp(email, password, {
       full_name: `${firstName} ${lastName}`,
