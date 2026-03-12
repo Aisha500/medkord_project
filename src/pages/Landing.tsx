@@ -49,7 +49,7 @@ const Landing = () => {
               Built for Nigerian Healthcare
             </div>
             <h1 className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-foreground md:text-6xl">
-              Your Medical Records,{' '}
+              Your Medical Records{' '}
               <span className="text-primary">Always Accessible</span>
             </h1>
             <p className="mb-10 text-lg text-muted-foreground md:text-xl leading-relaxed max-w-2xl mx-auto">
