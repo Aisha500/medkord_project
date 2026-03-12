@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { User, Clock, FileText, Pill, FlaskConical, LogOut, Share2 } from 'lucide-react';
-import MedCordLogo from '@/components/MedCordLogo';
+import MediCordLogo from '@/components/MediCordLogo';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/useAuth';
 import { mockConsultations, mockPrescriptions, mockLabResults } from '@/data/mockData';
