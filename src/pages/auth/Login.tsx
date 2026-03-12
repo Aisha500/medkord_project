@@ -1,15 +1,37 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Shield, Eye, EyeOff } from 'lucide-react';
+import { useAuth } from '@/hooks/useAuth';
+import { useToast } from '@/hooks/use-toast';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [accountType, setAccountType] = useState<'patient' | 'provider'>('patient');
+  const [loading, setLoading] = useState(false);
+  const { signIn } = useAuth();
+  const { toast } = useToast();
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !password) {
+      toast({ title: 'Please enter email and password', variant: 'destructive' });
+      return;
+    }
+    setLoading(true);
+    const { error } = await signIn(email, password);
+    setLoading(false);
+    if (error) {
+      toast({ title: 'Sign in failed', description: error.message, variant: 'destructive' });
+    } else {
+      navigate(accountType === 'patient' ? '/patient' : '/provider');
+    }
+  };
 
   return (
     <div className="flex min-h-screen">
@@ -53,7 +75,7 @@ const Login = () => {
             </button>
           </div>
 
-          <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+          <form className="space-y-5" onSubmit={handleSubmit}>
             <div className="space-y-2">
               <Label htmlFor="email">Email address</Label>
               <Input id="email" type="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -72,8 +94,8 @@ const Login = () => {
               </div>
             </div>
 
-            <Button variant="hero" className="w-full" size="lg" asChild>
-              <Link to={accountType === 'patient' ? '/patient' : '/provider'}>Sign In</Link>
+            <Button variant="hero" className="w-full" size="lg" type="submit" disabled={loading}>
+              {loading ? 'Signing In...' : 'Sign In'}
             </Button>
           </form>
 
