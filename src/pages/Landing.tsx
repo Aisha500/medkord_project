@@ -108,7 +108,7 @@ const Landing = () => {
         <div className="container text-center">
           <h2 className="mb-4 text-3xl font-bold text-primary-foreground">Ready to go digital?</h2>
           <p className="mx-auto mb-8 max-w-lg text-primary-foreground/80">
-            Join clinics across Nigeria that are moving to digital medical records with MediCord.
+            Join clinics across Nigeria that are moving to digital medical records with MedKord.
           </p>
           <Button size="lg" className="bg-background text-primary hover:bg-background/90 text-base px-8 py-6" asChild>
             <Link to="/signup/facility">Register Your Facility</Link>
