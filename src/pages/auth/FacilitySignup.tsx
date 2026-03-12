@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Shield } from 'lucide-react';
+import MedCordLogo from '@/components/MedCordLogo';
 import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/use-toast';
 
@@ -49,7 +49,7 @@ const FacilitySignup = () => {
       <div className="w-full max-w-lg">
         <Link to="/" className="mb-8 flex items-center justify-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-primary">
-            <Shield className="h-5 w-5 text-primary-foreground" />
+            <MedCordLogo size={20} className="text-primary-foreground" />
           </div>
           <span className="text-xl font-bold text-foreground">MedCord</span>
         </Link>

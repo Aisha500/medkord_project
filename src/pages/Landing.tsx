@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Shield, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import MedCordLogo from '@/components/MedCordLogo';
 import { useState } from 'react';
 
 const Landing = () => {
@@ -13,7 +14,7 @@ const Landing = () => {
         <div className="container flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-primary">
-              <Shield className="h-5 w-5 text-primary-foreground" />
+              <MedCordLogo size={20} className="text-primary-foreground" />
             </div>
             <span className="text-xl font-bold text-foreground">MedCord</span>
           </Link>
@@ -120,7 +121,7 @@ const Landing = () => {
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex items-center gap-2">
             <div className="flex h-7 w-7 items-center justify-center rounded-md gradient-primary">
-              <Shield className="h-4 w-4 text-primary-foreground" />
+              <MedCordLogo size={16} className="text-primary-foreground" />
             </div>
             <span className="font-semibold text-foreground">MedCord</span>
           </div>
