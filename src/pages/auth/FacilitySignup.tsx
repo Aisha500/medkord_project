@@ -26,7 +26,7 @@ const FacilitySignup = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!adminName || !adminEmail || !adminPassword || !facilityName) {
+    if (!adminName || !adminEmail || !adminPassword || !facilityName || !registrationNumber) {
       toast({ title: 'Please fill in all required fields', variant: 'destructive' });
       return;
     }
