@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Eye, EyeOff } from 'lucide-react';
-import MedCordLogo from '@/components/MedCordLogo';
+import MediCordLogo from '@/components/MediCordLogo';
 import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/use-toast';
 
@@ -39,8 +39,8 @@ const Login = () => {
       {/* Left panel */}
       <div className="hidden w-1/2 gradient-hero lg:flex lg:flex-col lg:items-center lg:justify-center lg:p-12">
         <div className="max-w-md text-center">
-          <MedCordLogo size={64} className="mx-auto mb-6 text-primary-foreground" />
-          <h2 className="mb-4 text-3xl font-bold text-primary-foreground">Welcome back to MedCord</h2>
+          <MediCordLogo size={64} className="mx-auto mb-6 text-primary-foreground" />
+          <h2 className="mb-4 text-3xl font-bold text-primary-foreground">Welcome back to MediCord</h2>
           <p className="text-primary-foreground/80 leading-relaxed">
             Access your medical records securely. Your health history, always at your fingertips.
           </p>
@@ -52,9 +52,9 @@ const Login = () => {
         <div className="w-full max-w-md">
           <Link to="/" className="mb-8 flex items-center gap-2 lg:hidden">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-primary">
-              <MedCordLogo size={20} className="text-primary-foreground" />
+              <MediCordLogo size={20} className="text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">MedCord</span>
+            <span className="text-xl font-bold text-foreground">MediCord</span>
           </Link>
 
           <h1 className="mb-2 text-2xl font-bold text-foreground">Sign in to your account</h1>

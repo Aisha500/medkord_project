@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { User, Clock, FileText, Pill, FlaskConical, LogOut, Share2 } from 'lucide-react';
-import MedCordLogo from '@/components/MedCordLogo';
+import MediCordLogo from '@/components/MediCordLogo';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/useAuth';
 import { mockConsultations, mockPrescriptions, mockLabResults } from '@/data/mockData';
@@ -24,8 +24,8 @@ const PatientDashboard = () => {
       <header className="gradient-hero px-4 pb-8 pt-6">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-2">
-            <MedCordLogo size={24} className="text-primary-foreground" />
-            <span className="font-bold text-primary-foreground">MedCord</span>
+            <MediCordLogo size={24} className="text-primary-foreground" />
+            <span className="font-bold text-primary-foreground">MediCord</span>
           </div>
           <button onClick={signOut} className="text-primary-foreground/80 hover:text-primary-foreground">
             <LogOut className="h-5 w-5" />

@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import MedCordLogo from '@/components/MedCordLogo';
+import MediCordLogo from '@/components/MediCordLogo';
 import { useState } from 'react';
 
 const Landing = () => {
@@ -14,9 +14,9 @@ const Landing = () => {
         <div className="container flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-primary">
-              <MedCordLogo size={20} className="text-primary-foreground" />
+              <MediCordLogo size={20} className="text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">MedCord</span>
+            <span className="text-xl font-bold text-foreground">MediCord</span>
           </Link>
 
           <div className="hidden items-center gap-6 md:flex">
@@ -53,7 +53,7 @@ const Landing = () => {
               <span className="text-primary">Always Accessible</span>
             </h1>
             <p className="mb-10 text-lg text-muted-foreground md:text-xl leading-relaxed max-w-2xl mx-auto">
-              MedCord digitizes patient consultation history so healthcare providers can record faster, and patients can access their medical records from any device.
+              MediCord digitizes patient consultation history so healthcare providers can record faster, and patients can access their medical records from any device.
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button variant="hero" size="lg" className="text-base px-8 py-6" asChild>
@@ -70,7 +70,7 @@ const Landing = () => {
       {/* Features */}
       <section className="border-t bg-card py-20">
         <div className="container">
-          <h2 className="mb-4 text-center text-3xl font-bold text-foreground">How MedCord Works</h2>
+          <h2 className="mb-4 text-center text-3xl font-bold text-foreground">How MediCord Works</h2>
           <p className="mx-auto mb-16 max-w-xl text-center text-muted-foreground">
             A simple, secure system connecting patients and healthcare providers.
           </p>
@@ -108,7 +108,7 @@ const Landing = () => {
         <div className="container text-center">
           <h2 className="mb-4 text-3xl font-bold text-primary-foreground">Ready to go digital?</h2>
           <p className="mx-auto mb-8 max-w-lg text-primary-foreground/80">
-            Join clinics across Nigeria that are moving to digital medical records with MedCord.
+            Join clinics across Nigeria that are moving to digital medical records with MediCord.
           </p>
           <Button size="lg" className="bg-background text-primary hover:bg-background/90 text-base px-8 py-6" asChild>
             <Link to="/signup/facility">Register Your Facility</Link>
@@ -121,11 +121,11 @@ const Landing = () => {
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex items-center gap-2">
             <div className="flex h-7 w-7 items-center justify-center rounded-md gradient-primary">
-              <MedCordLogo size={16} className="text-primary-foreground" />
+              <MediCordLogo size={16} className="text-primary-foreground" />
             </div>
-            <span className="font-semibold text-foreground">MedCord</span>
+            <span className="font-semibold text-foreground">MediCord</span>
           </div>
-          <p className="text-sm text-muted-foreground">© 2026 MedCord. Securing healthcare records for Nigeria.</p>
+          <p className="text-sm text-muted-foreground">© 2026 MediCord. Securing healthcare records for Nigeria.</p>
         </div>
       </footer>
     </div>
