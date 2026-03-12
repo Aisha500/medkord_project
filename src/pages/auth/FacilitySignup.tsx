@@ -10,6 +10,7 @@ import { useToast } from '@/hooks/use-toast';
 
 const FacilitySignup = () => {
   const [facilityName, setFacilityName] = useState('');
+  const [registrationNumber, setRegistrationNumber] = useState('');
   const [facilityType, setFacilityType] = useState('');
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
@@ -25,7 +26,7 @@ const FacilitySignup = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!adminName || !adminEmail || !adminPassword || !facilityName) {
+    if (!adminName || !adminEmail || !adminPassword || !facilityName || !registrationNumber) {
       toast({ title: 'Please fill in all required fields', variant: 'destructive' });
       return;
     }
@@ -62,6 +63,12 @@ const FacilitySignup = () => {
             <div className="space-y-2">
               <Label htmlFor="facilityName">Facility name</Label>
               <Input id="facilityName" placeholder="Lagoon Specialist Clinic" value={facilityName} onChange={(e) => setFacilityName(e.target.value)} />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="registrationNumber">Facility registration number <span className="text-destructive">*</span></Label>
+              <Input id="registrationNumber" placeholder="e.g. RC-123456 or HEFAMAA/2024/001" value={registrationNumber} onChange={(e) => setRegistrationNumber(e.target.value)} />
+              <p className="text-xs text-muted-foreground">Enter your CAC, HEFAMAA, or state health authority registration number</p>
             </div>
 
             <div className="space-y-2">
