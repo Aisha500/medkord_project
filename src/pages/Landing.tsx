@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Shield, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import MedCordLogo from '@/components/MedCordLogo';
 import { useState } from 'react';
 
 const Landing = () => {
