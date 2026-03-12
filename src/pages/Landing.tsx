@@ -121,9 +121,9 @@ const Landing = () => {
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex items-center gap-2">
             <div className="flex h-7 w-7 items-center justify-center rounded-md gradient-primary">
-              <MediCordLogo size={16} className="text-primary-foreground" />
+              <MedKordLogo size={16} className="text-primary-foreground" />
             </div>
-            <span className="font-semibold text-foreground">MediCord</span>
+            <span className="font-semibold text-foreground">MedKord</span>
           </div>
           <p className="text-sm text-muted-foreground">© 2026 MediCord. Securing healthcare records for Nigeria.</p>
         </div>
