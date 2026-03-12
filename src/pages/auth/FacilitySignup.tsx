@@ -66,6 +66,12 @@ const FacilitySignup = () => {
             </div>
 
             <div className="space-y-2">
+              <Label htmlFor="registrationNumber">Facility registration number <span className="text-destructive">*</span></Label>
+              <Input id="registrationNumber" placeholder="e.g. RC-123456 or HEFAMAA/2024/001" value={registrationNumber} onChange={(e) => setRegistrationNumber(e.target.value)} />
+              <p className="text-xs text-muted-foreground">Enter your CAC, HEFAMAA, or state health authority registration number</p>
+            </div>
+
+            <div className="space-y-2">
               <Label>Facility type</Label>
               <Select value={facilityType} onValueChange={setFacilityType}>
                 <SelectTrigger><SelectValue placeholder="Select type" /></SelectTrigger>
