@@ -125,7 +125,7 @@ const Landing = () => {
             </div>
             <span className="font-semibold text-foreground">MedKord</span>
           </div>
-          <p className="text-sm text-muted-foreground">© 2026 MediCord. Securing healthcare records for Nigeria.</p>
+          <p className="text-sm text-muted-foreground">© 2026 MedKord. Securing healthcare records for Nigeria.</p>
         </div>
       </footer>
     </div>
