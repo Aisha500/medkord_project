@@ -39,4 +39,4 @@ const MediCordLogo = ({ size = 20, className = '' }: MediCordLogoProps) => (
   </svg>
 );
 
-export default MedCordLogo;
+export default MediCordLogo;
