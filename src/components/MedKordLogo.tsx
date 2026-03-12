@@ -1,9 +1,9 @@
-interface MediCordLogoProps {
+interface MedKordLogoProps {
   size?: number;
   className?: string;
 }
 
-const MediCordLogo = ({ size = 20, className = '' }: MediCordLogoProps) => (
+const MedKordLogo = ({ size = 20, className = '' }: MedKordLogoProps) => (
   <svg
     width={size}
     height={size}
@@ -39,4 +39,4 @@ const MediCordLogo = ({ size = 20, className = '' }: MediCordLogoProps) => (
   </svg>
 );
 
-export default MediCordLogo;
+export default MedKordLogo;

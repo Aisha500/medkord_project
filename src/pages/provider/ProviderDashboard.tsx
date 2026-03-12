@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Users, Search, Plus, UserPlus, Settings, FileText, Activity, LogOut } from 'lucide-react';
-import MediCordLogo from '@/components/MediCordLogo';
+import MedKordLogo from '@/components/MedKordLogo';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { mockConsultations, mockStaff } from '@/data/mockData';
@@ -42,9 +42,9 @@ const ProviderDashboard = () => {
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 border-r bg-card lg:block">
         <div className="flex h-16 items-center gap-2 border-b px-6">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
-            <MediCordLogo size={16} className="text-primary-foreground" />
+            <MedKordLogo size={16} className="text-primary-foreground" />
           </div>
-          <span className="font-bold text-foreground">MediCord</span>
+          <span className="font-bold text-foreground">MedKord</span>
         </div>
 
         <div className="p-4">
@@ -79,9 +79,9 @@ const ProviderDashboard = () => {
         <div className="flex h-14 items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
-              <MediCordLogo size={16} className="text-primary-foreground" />
+              <MedKordLogo size={16} className="text-primary-foreground" />
             </div>
-            <span className="font-bold text-foreground text-sm">MediCord</span>
+            <span className="font-bold text-foreground text-sm">MedKord</span>
           </div>
           <Link to="/" className="text-muted-foreground"><LogOut className="h-5 w-5" /></Link>
         </div>

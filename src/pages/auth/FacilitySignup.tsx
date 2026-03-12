@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import MediCordLogo from '@/components/MediCordLogo';
+import MedKordLogo from '@/components/MedKordLogo';
 import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/use-toast';
 
@@ -50,14 +50,14 @@ const FacilitySignup = () => {
       <div className="w-full max-w-lg">
         <Link to="/" className="mb-8 flex items-center justify-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-primary">
-            <MediCordLogo size={20} className="text-primary-foreground" />
+            <MedKordLogo size={20} className="text-primary-foreground" />
           </div>
-          <span className="text-xl font-bold text-foreground">MediCord</span>
+          <span className="text-xl font-bold text-foreground">MedKord</span>
         </Link>
 
         <div className="rounded-xl border bg-card p-8 shadow-card">
           <h1 className="mb-2 text-xl font-bold text-foreground">Register Your Health Facility</h1>
-          <p className="mb-6 text-sm text-muted-foreground">Set up your clinic, hospital, or health centre on MediCord</p>
+          <p className="mb-6 text-sm text-muted-foreground">Set up your clinic, hospital, or health centre on MedKord</p>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="space-y-2">

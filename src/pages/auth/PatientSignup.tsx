@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import MediCordLogo from '@/components/MediCordLogo';
+import MedKordLogo from '@/components/MedKordLogo';
 import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/use-toast';
 
@@ -46,9 +46,9 @@ const PatientSignup = () => {
       <div className="w-full max-w-md">
         <Link to="/" className="mb-8 flex items-center justify-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-primary">
-            <MediCordLogo size={20} className="text-primary-foreground" />
+            <MedKordLogo size={20} className="text-primary-foreground" />
           </div>
-          <span className="text-xl font-bold text-foreground">MediCord</span>
+          <span className="text-xl font-bold text-foreground">MedKord</span>
         </Link>
 
         <div className="rounded-xl border bg-card p-8 shadow-card">
