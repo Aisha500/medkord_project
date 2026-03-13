@@ -94,7 +94,10 @@ const PatientSignup = () => {
 
             <div className="space-y-2">
               <Label htmlFor="confirmPassword">Confirm password</Label>
-              <Input id="confirmPassword" type="password" placeholder="••••••••" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+              <Input id="confirmPassword" type="password" placeholder="••••••••" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className={confirmPassword && password !== confirmPassword ? 'border-destructive' : ''} />
+              {confirmPassword && password !== confirmPassword && (
+                <p className="text-xs text-destructive">Passwords do not match</p>
+              )}
             </div>
 
             <Button variant="hero" className="w-full" size="lg" type="submit" disabled={loading}>

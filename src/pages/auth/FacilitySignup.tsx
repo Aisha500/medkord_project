@@ -127,7 +127,10 @@ const FacilitySignup = () => {
               </div>
               <div className="mt-4 space-y-2">
                 <Label htmlFor="adminConfirmPassword">Confirm password</Label>
-                <Input id="adminConfirmPassword" type="password" placeholder="••••••••" value={adminConfirmPassword} onChange={(e) => setAdminConfirmPassword(e.target.value)} />
+                <Input id="adminConfirmPassword" type="password" placeholder="••••••••" value={adminConfirmPassword} onChange={(e) => setAdminConfirmPassword(e.target.value)} className={adminConfirmPassword && adminPassword !== adminConfirmPassword ? 'border-destructive' : ''} />
+                {adminConfirmPassword && adminPassword !== adminConfirmPassword && (
+                  <p className="text-xs text-destructive">Passwords do not match</p>
+                )}
               </div>
             </div>
 
